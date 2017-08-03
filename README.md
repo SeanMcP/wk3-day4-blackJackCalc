@@ -1,2 +1,2 @@
-#Black Jack Hand Calculator
+# Black Jack Hand Calculator
 - Javascript
