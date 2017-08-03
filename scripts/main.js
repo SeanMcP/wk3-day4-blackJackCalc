@@ -12,8 +12,11 @@
 function handValue (hand) {
 
   let handTotal = 0;
+  let handSort = [];
+  let sortFlag = true;
 
   for (var i = 0; i < hand.length; i++) {
+
     if (Number(hand[i]) >=2 && Number(hand[i]) <= 10) {
       handTotal += Number(hand[i]);
     } else if ((hand[i] === "J") || (hand[i] === "Q") || (hand[i] === "K") ) {
