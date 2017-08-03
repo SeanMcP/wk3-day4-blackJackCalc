@@ -12,8 +12,11 @@
 function handValue (hand) {
 
   let handTotal = 0;
-  let handSort = [];
+  let handSort = hand;
   let sortFlag = true;
+
+  //The code below was adopted from an article on StackOverflow. I'm working to understand the methods
+  handSort.push(handSort.splice(handSort.indexOf("A"), 1)[0]);
 
   for (var i = 0; i < hand.length; i++) {
 
